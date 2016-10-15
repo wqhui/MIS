@@ -72,3 +72,24 @@ SQL语句
 ![数据库](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E6%9F%A5%E8%AF%A2%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%852.png "详情图2")
 详情图3
 ![数据库](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E6%9F%A5%E8%AF%A2%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%853.png "详情图3")
+
+#####2.信息录入
+    /*保养信息录入 需要修改内容，否则重复*/
+    /*填写保养人员等详细*/
+    INSERT INTO `cart`.`check_detail` (`CD_group`, `CD_person`, `CD_type`, `CD_time`, `Eid`) VALUES ('风组', '小小风', '半年检', '2016-       09-10', '5');
+    /*填写保养内容*/
+    INSERT INTO `cart`.`check_type` (`CT_content`, `CT_situaction`, `Eid`, `CD_id`) VALUES ('检查6000V接线盒内瓷瓶、端子；', '正常', '1',     '5');
+    INSERT INTO `cart`.`check_type` (`CT_content`, `CT_situaction`, `CT_note`, `Eid`, `CD_id`) VALUES ('接线盒内卫生清洁；', '异常', '更换    接线盒', '1', '5');
+    INSERT INTO `cart`.`check_type` (`CT_content`, `CT_situaction`, `Eid`, `CD_id`) VALUES ('电机上是否有杂物，多要通知工艺处理。', '正常',     '2', '6');
+    INSERT INTO `cart`.`check_type` (`CT_content`, `CT_situaction`, `Eid`, `CD_id`) VALUES ('电机接地线连接是否可靠；', '正常', '2', '6');
+![数据库](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E8%AE%BE%E5%A4%87%E5%BD%95%E5%85%A5.png)
+#####3.预警信息
+    /*预警信息*/
+    select *
+    from equipment,(select check_detail.Eid,check_detail.CD_circle,max(check_detail.CD_time) as timee from check_detail group by             check_detail.Eid) AS T
+    where T.Eid=equipment.Eid 
+    and 
+	    (T.CD_circle - DATEDIFF(now(),T.timee)) <4    
+    group by equipment.Eid
+![数据库](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E9%A2%84%E8%AD%A6%E4%BF%A1%E6%81%AF.png)           	   
+
