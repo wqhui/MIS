@@ -2,18 +2,18 @@
 
 数据库介绍
 ------- 
-1.equ_type表（设备类别表)
+######equ_type表（设备类别表)
 * ET_id
 * ET_name（设备类型名字）
-2.equ_content表（设备修理内容表）
+######equ_content表（设备修理内容表）
 * EC_id
 * ET_id  （设备类别表ID）
 * EC_content （设备修理内容）
-3.Equiment表（设备表）
+######Equiment表（设备表）
 * Eid  自增长主键
 * Enumber 设备型号
 * ET_id（设备类别表ID）
-4.Check_Detail表（保修详情表）
+######Check_Detail表（保修详情表）
 * CD_id  自增长主键
 * CD_group 小组名
 * CD_person 检修人
@@ -22,14 +22,14 @@
 * CD_explain 说明
 * Eid			（设备表）外键
 * CD_circle		年检之类的时间（年检填365）
-5.Check_Type（保修内容表）
+######Check_Type（保修内容表）
 * CT_id   		自增长主键
 * CT_content	检修内容
 * CT_situaction  检修情况
 * CT_note  备注
 * Eid		（设备表）外键
 * CD_id		 （保修详情表）外键	
-6.Check_consume（保修消耗表）
+######Check_consume（保修消耗表）
 * CC_id  		自增长主键
 * CD_id			（保修详情表）外键
 * Eid			（设备表）外键
