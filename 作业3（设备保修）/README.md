@@ -35,5 +35,5 @@
     Eid			（设备表）外键
     CC_material	 消耗材料名字
     CC_quantity	 消耗材料数量
-![github](https://github.com/DeathKL/MIS/作业3（设备保修）/ER图.png “github”)
+![数据库](https://github.com/DeathKL/MIS/作业3（设备保修）/ER图.png " 数据库ER图")
 
