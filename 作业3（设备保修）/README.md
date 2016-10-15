@@ -37,4 +37,33 @@
     CC_material	 消耗材料名字
     CC_quantity	 消耗材料数量
 
-
+SQL语句
+------- 
+#####1.查询保修信息
+    /*根据设备号查询保修信息*/
+    /*（详情图1）*/
+    select * from equipment,check_detail,check_type,check_consume
+    where 
+	    equipment.Eid=(SELECT Eid from equipment where equipment.Enumber="1001")    	
+    and
+	    check_detail.Eid = (SELECT Eid from equipment where equipment.Enumber="1001")
+    and
+	    check_type.Eid = (SELECT Eid from equipment where equipment.Enumber="1001")
+    and
+	    check_consume.Eid = (SELECT Eid from equipment where equipment.Enumber="1001") 
+    and
+	    check_detail.CD_id=check_type.CD_id  /*详情表和内容表ID一致（详情表ID）*/
+    /*（详情图2）*/     
+    /* 查看消耗品 内容表和消耗表ID一致（详情表ID） 删除中间下方的注释即可*/          
+    /*  
+    and
+	    check_detail.CD_id=check_consume.CD_id  
+    */  
+    /*详情表和消耗表ID一致（详情表ID）*/ 
+    /*（详情图3）*/ 
+    /* 查看某一时间的保修详情  删除下方中间的注释即可*/           
+    /*
+    and
+	    CD_time='2015-10-11' 
+    */
+![数据库](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/ER%E5%9B%BE.png)
