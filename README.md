@@ -1,6 +1,6 @@
 # MIS
     1.equ_type表（设备类别表
-  	*ET_id
+  		*ET_id
 	*ET_name（设备类型名字）
     2.equ_content表（设备修理内容表）
     *EC_id
