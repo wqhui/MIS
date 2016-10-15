@@ -1,5 +1,5 @@
 # MIS
-1.equ_type表（设备类别表
+1.equ_type表（设备类别表)
 * ET_id
 * ET_name（设备类型名字）
 2.equ_content表（设备修理内容表）
@@ -7,8 +7,8 @@
 * ET_id  （设备类别表ID）
 * EC_content （设备修理内容）
 3.Equiment表（设备表）
-    *Eid  自增长主键
-    *Enumber 设备型号
+*Eid  自增长主键
+*Enumber 设备型号
     *ET_id（设备类别表ID）
 4.Check_Detail表（保修详情表）
     *CD_id  自增长主键
