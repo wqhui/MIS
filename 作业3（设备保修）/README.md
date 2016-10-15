@@ -1,4 +1,16 @@
 # MIS
+原型介绍
+------- 
+#####1.主页
+![原型](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E4%B8%BB%E9%A1%B5.png)
+#####2.设备详情
+![原型](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85.png)
+#####3.录入信息
+![原型](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E8%AE%BE%E5%A4%87%E5%BD%95%E5%85%A5.png)
+#####4.保修详情
+![原型](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%85.png)
+#####5.打印页面
+![原型](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E6%89%93%E5%8D%B0.png)
 
 数据库介绍
 ------- 
