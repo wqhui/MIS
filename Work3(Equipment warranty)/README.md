@@ -2,19 +2,19 @@
 原型介绍
 ------- 
 #####1.主页
-![原型](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E4%B8%BB%E9%A1%B5.png)
+![原型](https://github.com/DeathKL/MIS/blob/master/Work3(Equipment%20warranty)/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E4%B8%BB%E9%A1%B5.png)
 #####2.设备详情
-![原型](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85.png)
+![原型](https://github.com/DeathKL/MIS/blob/master/Work3(Equipment%20warranty)/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E8%AE%BE%E5%A4%87%E8%AF%A6%E6%83%85.png)
 #####3.录入信息
-![原型](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E8%AE%BE%E5%A4%87%E5%BD%95%E5%85%A5.png)
+![原型](https://github.com/DeathKL/MIS/blob/master/Work3(Equipment%20warranty)/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E8%AE%BE%E5%A4%87%E5%BD%95%E5%85%A5.png)
 #####4.保修详情
-![原型](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%85.png)
+![原型](https://github.com/DeathKL/MIS/blob/master/Work3(Equipment%20warranty)/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%85.png)
 #####5.打印页面
-![原型](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E6%89%93%E5%8D%B0.png)
+![原型](https://github.com/DeathKL/MIS/blob/master/Work3(Equipment%20warranty)/%E5%8E%9F%E5%9E%8B%E9%A2%84%E8%A7%88%E6%89%93%E5%8D%B0.png)
 
 数据库介绍
 ------- 
-![数据库](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/ER%E5%9B%BE.png)
+![数据库](https://github.com/DeathKL/MIS/blob/master/Work3(Equipment%20warranty)/ER%E5%9B%BE.png)
 #####1.equ_type表（设备类别表)
     ET_id
     ET_name（设备类型名字)
@@ -79,11 +79,11 @@ SQL语句
 	    CD_time='2015-10-11' 
     */
 详情图1    
-![数据库](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E6%9F%A5%E8%AF%A2%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%851.png "详情图1")
+![数据库](https://github.com/DeathKL/MIS/blob/master/Work3(Equipment%20warranty)/%E6%9F%A5%E8%AF%A2%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%851.png "详情图1")
 详情图2  
-![数据库](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E6%9F%A5%E8%AF%A2%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%852.png "详情图2")
+![数据库](https://github.com/DeathKL/MIS/blob/master/Work3(Equipment%20warranty)/%E6%9F%A5%E8%AF%A2%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%852.png "详情图2")
 详情图3
-![数据库](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E6%9F%A5%E8%AF%A2%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%853.png "详情图3")
+![数据库](https://github.com/DeathKL/MIS/blob/master/Work3(Equipment%20warranty)/%E6%9F%A5%E8%AF%A2%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%853.png "详情图3")
 
 #####2.信息录入
     /*保养信息录入 需要修改内容，否则重复*/
@@ -94,7 +94,7 @@ SQL语句
     INSERT INTO `cart`.`check_type` (`CT_content`, `CT_situaction`, `CT_note`, `Eid`, `CD_id`) VALUES ('接线盒内卫生清洁；', '异常', '更换    接线盒', '1', '5');
     INSERT INTO `cart`.`check_type` (`CT_content`, `CT_situaction`, `Eid`, `CD_id`) VALUES ('电机上是否有杂物，多要通知工艺处理。', '正常',     '2', '6');
     INSERT INTO `cart`.`check_type` (`CT_content`, `CT_situaction`, `Eid`, `CD_id`) VALUES ('电机接地线连接是否可靠；', '正常', '2', '6');
-![数据库](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E8%AE%BE%E5%A4%87%E5%BD%95%E5%85%A5.png)
+![数据库](https://github.com/DeathKL/MIS/blob/master/Work3(Equipment%20warranty)/%E8%AE%BE%E5%A4%87%E5%BD%95%E5%85%A5.png)
 #####3.预警信息
     /*预警信息*/
     select *
@@ -103,5 +103,5 @@ SQL语句
     and 
 	    (T.CD_circle - DATEDIFF(now(),T.timee)) <4    
     group by equipment.Eid
-![数据库](https://github.com/DeathKL/MIS/blob/master/%E4%BD%9C%E4%B8%9A3%EF%BC%88%E8%AE%BE%E5%A4%87%E4%BF%9D%E4%BF%AE%EF%BC%89/%E9%A2%84%E8%AD%A6%E4%BF%A1%E6%81%AF.png)           	   
+![数据库](https://github.com/DeathKL/MIS/blob/master/Work3(Equipment%20warranty)/%E9%A2%84%E8%AD%A6%E4%BF%A1%E6%81%AF.png)           	   
 
