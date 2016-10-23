@@ -21,5 +21,5 @@
 #####5.设备保养信息查询      	   
 ![设备保养信息查询](https://github.com/DeathKL/MIS/blob/master/Work4/%E8%AE%BE%E5%A4%87%E4%BF%9D%E5%85%BB%E6%83%85%E5%86%B5%E6%9F%A5%E8%AF%A2.png)
 
-#####5.设备保养信息打印     	   
+#####6.设备保养信息打印     	   
 ![设备保养信息打印](https://github.com/DeathKL/MIS/blob/master/Work4/%E8%AE%BE%E5%A4%87%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%85%E6%89%93%E5%8D%B0.png)
