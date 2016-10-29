@@ -3,8 +3,12 @@
 SQL查询语句
 ------- 
 #####1.根据test1的用户ID和user表，查询对order中的sys_button的权限
-######思路
-
+######逻辑过程
+    IF 用户名=test1 存在 then
+    	do	查询ID
+    		根据ID和用户名查询用户对order中的sys_button的权限
+    else
+    	do  结束查询
 ######SQL语句
     /*根据test1的用户ID和user表，查询对order中的sys_button的权限*/
     SELECT * FROM sys_button
@@ -20,7 +24,11 @@ SQL查询语句
 
 #####2.根据test1的用户ID和user表，查询对Sys_menu的权限
 ######思路
-
+    IF 用户名=test1 存在 then
+    	do	查询ID
+    		根据ID和用户名查询用户对查询对Sys_menu的权限
+    else
+    	do  结束查询	
 ######SQL语句
     /*根据test1的用户ID和user表，查询对Sys_menu的权限*/
     SELECT * FROM sys_menu
@@ -37,7 +45,12 @@ SQL查询语句
 
 #####3.根据test1的角色ID和角色表，查询对Sys_menu的权限
 ######思路
-
+     IF 用户名=test1 存在 then
+    	do	查询ID
+    		根据ID和用户名查询用户的角色ID
+		根据角色ID和角色表查询用户对Sys_menu的权限
+    else
+    	do  结束查询
 ######SQL语句
     /*根据test1的角色ID和角色表，查询对Sys_menu的权限*/
     SELECT * FROM sys_menu
@@ -56,7 +69,12 @@ SQL查询语句
 
 #####4.根据test1的角色ID和角色表，查询对order中的sys_button的权限
 ######思路
-
+    IF 用户名=test1 存在 then
+    	do	查询ID
+    		根据ID和用户名查询用户的角色ID
+		根据角色ID和角色表查询用户对order中的sys_button的权限
+    else
+    	do  结束查询
 ######SQL语句
     /*根据test1的角色ID和角色表，查询对order中的sys_button的权限*/
     SELECT * FROM sys_button
