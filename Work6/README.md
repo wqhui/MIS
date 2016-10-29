@@ -3,6 +3,9 @@
 SQL查询语句
 ------- 
 #####1.根据test1的用户ID和user表，查询对order中的sys_button的权限
+######思路
+
+######SQL语句
     /*根据test1的用户ID和user表，查询对order中的sys_button的权限*/
     SELECT * FROM sys_button
     WHERE sys_button.BtnID IN
@@ -16,6 +19,9 @@ SQL查询语句
 ![u-1](https://github.com/DeathKL/MIS/blob/master/Work6/u-1.png)
 
 #####2.根据test1的用户ID和user表，查询对Sys_menu的权限
+######思路
+
+######SQL语句
     /*根据test1的用户ID和user表，查询对Sys_menu的权限*/
     SELECT * FROM sys_menu
     WHERE sys_menu.MenuID IN
@@ -30,6 +36,9 @@ SQL查询语句
 ![u-2](https://github.com/DeathKL/MIS/blob/master/Work6/u-2.png)
 
 #####3.根据test1的角色ID和角色表，查询对Sys_menu的权限
+######思路
+
+######SQL语句
     /*根据test1的角色ID和角色表，查询对Sys_menu的权限*/
     SELECT * FROM sys_menu
     WHERE sys_menu.MenuID IN
@@ -46,6 +55,9 @@ SQL查询语句
 ![r-1](https://github.com/DeathKL/MIS/blob/master/Work6/r-1.png)
 
 #####4.根据test1的角色ID和角色表，查询对order中的sys_button的权限
+######思路
+
+######SQL语句
     /*根据test1的角色ID和角色表，查询对order中的sys_button的权限*/
     SELECT * FROM sys_button
     WHERE sys_button.BtnID IN
