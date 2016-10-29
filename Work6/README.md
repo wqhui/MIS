@@ -48,7 +48,7 @@ SQL查询语句
      IF 用户名=test1 存在 then
     	do	查询ID
     		根据ID和用户名查询用户的角色ID
-		根据角色ID和角色表查询用户对Sys_menu的权限
+			根据角色ID和角色表查询用户对Sys_menu的权限
     else
     	do  结束查询
 ######SQL语句
@@ -72,7 +72,7 @@ SQL查询语句
     IF 用户名=test1 存在 then
     	do	查询ID
     		根据ID和用户名查询用户的角色ID
-		根据角色ID和角色表查询用户对order中的sys_button的权限
+			根据角色ID和角色表查询用户对order中的sys_button的权限		
     else
     	do  结束查询
 ######SQL语句
