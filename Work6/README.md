@@ -1,25 +1,62 @@
 # MIS
 
-一、用例图
+SQL查询语句
 ------- 
-![用例图](https://github.com/DeathKL/MIS/blob/master/Work4/%E7%94%A8%E4%BE%8B%E5%9B%BE.png)
+#####1.根据test1的用户ID和user表，查询对order中的sys_button的权限
+    /*根据test1的用户ID和user表，查询对order中的sys_button的权限*/
+    SELECT * FROM sys_button
+    WHERE sys_button.BtnID IN
+    (SELECT cf_privilege.PrivilegeAccessKey FROM cf_privilege
+		WHERE cf_privilege.PrivilegeMaster='CF_User'
+		AND cf_privilege.PrivilegeMasterKey=
+		(SELECT cf_user.UserID FROM cf_user
+					WHERE cf_user.LoginName='test1')
+		AND cf_privilege.PrivilegeAccess='Sys_Button'
+		)
+![u-1](https://github.com/DeathKL/MIS/blob/master/Work6/u-1.png)
 
-二、用例描述
-------- 
-#####1.设备状况查询
-![设备状况查询](https://github.com/DeathKL/MIS/blob/master/Work4/%E8%AE%BE%E5%A4%87%E7%8A%B6%E5%86%B5%E6%9F%A5%E8%AF%A2.png)
-                
-#####2.设备预警      	   
-![设备预警](https://github.com/DeathKL/MIS/blob/master/Work4/%E8%AE%BE%E5%A4%87%E9%A2%84%E8%AD%A6.png)
+#####2.根据test1的用户ID和user表，查询对Sys_menu的权限
+    /*根据test1的用户ID和user表，查询对Sys_menu的权限*/
+    SELECT * FROM sys_menu
+    WHERE sys_menu.MenuID IN
+    (SELECT cf_privilege.PrivilegeAccessKey FROM cf_privilege
+		WHERE cf_privilege.PrivilegeMaster='CF_User'
+		AND cf_privilege.PrivilegeMasterKey=
+		(SELECT cf_user.UserID FROM cf_user
+					WHERE cf_user.LoginName='test1')
+		AND cf_privilege.PrivilegeAccess='Sys_Menu'
+		)
 
-#####3.查询预警设备    	   
-![查询预警设备](https://github.com/DeathKL/MIS/blob/master/Work4/%E6%9F%A5%E8%AF%A2%E9%A2%84%E8%AD%A6%E8%AE%BE%E5%A4%87.png)
+![u-2](https://github.com/DeathKL/MIS/blob/master/Work6/u-2.png)
 
-#####4.设备保养信息录入      	   
-![设备保养信息录入](https://github.com/DeathKL/MIS/blob/master/Work4/%E8%AE%BE%E5%A4%87%E4%BF%9D%E5%85%BB%E4%BF%A1%E6%81%AF%E5%BD%95%E5%85%A5.png)
+#####3.根据test1的角色ID和角色表，查询对Sys_menu的权限
+    /*根据test1的角色ID和角色表，查询对Sys_menu的权限*/
+    SELECT * FROM sys_menu
+    WHERE sys_menu.MenuID IN
+    (SELECT cf_privilege.PrivilegeAccessKey FROM cf_privilege
+    WHERE cf_privilege.PrivilegeMaster='CF_Role'
+    AND cf_privilege.PrivilegeMasterKey=
+        (SELECT cf_userrole.RoleID FROM cf_userrole
+            WHERE cf_userrole.UserID =
+                    (SELECT cf_user.UserID FROM cf_user
+                    WHERE cf_user.LoginName='test1')
+        )
+    AND cf_privilege.PrivilegeAccess='Sys_Menu')
 
-#####5.设备保养信息查询      	   
-![设备保养信息查询](https://github.com/DeathKL/MIS/blob/master/Work4/%E8%AE%BE%E5%A4%87%E4%BF%9D%E5%85%BB%E6%83%85%E5%86%B5%E6%9F%A5%E8%AF%A2.png)
+![r-1](https://github.com/DeathKL/MIS/blob/master/Work6/r-1.png)
 
-#####6.设备保养信息打印     	   
-![设备保养信息打印](https://github.com/DeathKL/MIS/blob/master/Work4/%E8%AE%BE%E5%A4%87%E4%BF%9D%E5%85%BB%E8%AF%A6%E6%83%85%E6%89%93%E5%8D%B0.png)
+#####4.根据test1的角色ID和角色表，查询对order中的sys_button的权限
+    /*根据test1的角色ID和角色表，查询对order中的sys_button的权限*/
+    SELECT * FROM sys_button
+    WHERE sys_button.BtnID IN
+    (SELECT cf_privilege.PrivilegeAccessKey FROM cf_privilege
+    WHERE cf_privilege.PrivilegeMaster='CF_Role'
+    AND cf_privilege.PrivilegeMasterKey=
+        (SELECT cf_userrole.RoleID FROM cf_userrole
+            WHERE cf_userrole.UserID =
+                    (SELECT cf_user.UserID FROM cf_user
+                    WHERE cf_user.LoginName='test1')
+        )
+    AND cf_privilege.PrivilegeAccess='Sys_Button')
+
+![r-2](https://github.com/DeathKL/MIS/blob/master/Work6/r-2.png)
